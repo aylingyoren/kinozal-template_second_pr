@@ -65,6 +65,15 @@ body {
   overflow-y: scroll;
 }
 
+a {
+  color: #165690;
+}
+
+a:hover a:focus {
+  text-decoration: none;
+  color: #df8a13;
+}
+
 .header-logo {
   text-align: center;
   padding: 100px 0;
@@ -119,6 +128,64 @@ body {
 
 .user-login__tabs .active a {
   color: #ffffff !important;
+}
+
+.site-news-item {
+  position: relative;
+  clear: both;
+}
+
+.site-news-item:not(:last-of-type) {
+  min-height: 85px;
+  margin-bottom: 15px;
+}
+
+.site-news-item:not(:last-of-type)::after {
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+  height: 1px;
+  width: calc(100% - 85px);
+  content: "";
+  background-color: #dddddd;
+}
+
+.site-news-item:hover a {
+  color: #df8a13;
+}
+
+.site-news-item:hover .site-news-item__image {
+  background-color: #df8a13;
+  border-color: #df8a13;
+}
+
+.site-news-item__image {
+  float: left;
+  width: 75px;
+  margin: 0 10px 10px 0;
+}
+
+.site-news-item__title {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  overflow: hidden;
+  height: 50px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.site-news-item__title a {
+  -webkit-transition: color, 0.25s;
+  -o-transition: color, 0.25s;
+  transition: color, 0.25s;
+}
+
+.site-news-item__date {
+  text-align: right;
+  font-size: 0.8rem;
+  color: #909090;
 }
 
 @media (min-width: 576px) {
