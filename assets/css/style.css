@@ -50,6 +50,11 @@
   border-radius: 0 0 4px 4px;
 }
 
+.input-lg,
+.input-group-lg > .form-control {
+  font-size: 0.875rem;
+}
+
 html {
   font-size: 16px;
 }
@@ -92,6 +97,28 @@ body {
 
 .vertical-slider__image {
   width: 100%;
+}
+
+.user-login {
+  position: relative;
+}
+
+.user-login__tabs {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  border: none;
+}
+
+.user-login__tabs a {
+  background-color: transparent !important;
+  border: none !important;
+  color: #dddddd;
+  padding: 14px 5px 11px !important;
+}
+
+.user-login__tabs .active a {
+  color: #ffffff !important;
 }
 
 @media (min-width: 576px) {
